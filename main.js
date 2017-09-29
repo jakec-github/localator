@@ -95,14 +95,22 @@ if (getQueryVariable("time")){
   let zone = new Date().toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
   let totalOffset = Number(sourceOffset) - Number(localOffset);
   let finalTime = inputTimeMinutes + totalOffset;
-  finalHour = Math.floor(finalTime / 60);
+  console.log(finalTime);
+  console.log(finalTime/60);
+  if(finalTime < 0){
+    finalHour = Math.ceil(finalTime / 60);
+  }
+  else{
+    finalHour = Math.floor(finalTime / 60);
+  }
+  console.log(finalHour);
   while(finalHour < 0){
     finalHour += 24;
   }
   while(finalHour > 23){
     finalHour -= 24;
   }
-  finalTime = finalHour + ":" + finalTime % 60;
+  finalTime = finalHour + ":" + Math.abs(finalTime % 60);
 
   if(finalTime.length === 4 && finalTime[2] === ":"){
     finalTime += "0";
