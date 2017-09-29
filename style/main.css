@@ -1,6 +1,6 @@
 @font-face {
   font-family: Digital;
-  src: url(digital-dream.fat-narrow.ttf); }
+  src: url(../digital-dream.fat-narrow.ttf); }
 body {
   margin: 0px;
   height: 100vh;
@@ -8,7 +8,25 @@ body {
   text-align: center;
   font-family: 'Comfortaa', cursive;
   font-size: 20px;
-  color: #29292A; }
+  color: #333333; }
+
+header {
+  background-color: #333333;
+  max-height: 120px;
+  min-height: 80px;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  font-size: 45px;
+  text-align: left;
+  padding-top: 2%;
+  padding-left: 8%; }
+  header a {
+    color: white;
+    text-decoration: none; }
+
+#intro {
+  width: 70%;
+  margin: auto;
+  margin-top: 3%; }
 
 .display {
   background: linear-gradient(135deg, #4a4a4a 59%, #4a4a4a 66%, #757575 88%, #8c8c8c 100%);
@@ -43,8 +61,7 @@ body {
 
 #main-display {
   width: 50%;
-  height: 180px;
-  margin-top: 5%; }
+  height: 180px; }
 
 #input-time {
   font-size: 5vw; }
@@ -54,25 +71,45 @@ body {
 
 main {
   width: 80%;
-  border: 3px #33D7E8 solid;
+  border: 5px #33D7E8 solid;
   border-radius: 15px;
   margin: auto;
-  margin-top: 10%; }
+  margin-top: 3%;
+  box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.75); }
   main .input {
     margin-top: 20px;
     font-family: 'Comfortaa', cursive;
-    font-size: 20px; }
+    font-size: 20px;
+    cursor: pointer; }
   main .label {
     display: block;
     margin-top: 20px; }
   main #submit-button {
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     font-family: 'Comfortaa', cursive;
-    font-size: 20px; }
+    font-size: 20px;
+    border: 2px #33D7E8 solid;
+    border-radius: 3px;
+    background-color: white;
+    padding: 5px 25px 5px 25px;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.75);
+    cursor: pointer; }
+    main #submit-button:active {
+      box-shadow: none;
+      margin-top: 27px;
+      margin-bottom: 23px; }
   main #timezone-input {
     display: block;
     margin: auto;
     margin-top: 20px;
     font-size: 1.3vw; }
+  main #url {
+    font-size: 1.3vw;
+    margin-bottom: 35px;
+    background-color: #333333;
+    color: white;
+    border-radius: 5px;
+    display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,7 +1,10 @@
 @font-face {
     font-family: Digital;
-    src: url(digital-dream.fat-narrow.ttf);
+    src: url(../digital-dream.fat-narrow.ttf);
 }
+
+$grey: #333333;
+$blue: #33D7E8;
 
 body {
   margin: 0px;
@@ -10,8 +13,29 @@ body {
   text-align: center;
   font-family: 'Comfortaa', cursive;
   font-size: 20px;
-  color: #29292A;
+  color: $grey;
   // border: 1px dashed blue;
+}
+
+header {
+  background-color: $grey;
+  max-height: 120px;
+  min-height: 80px;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  font-size: 45px;
+  text-align: left;
+  padding-top: 2%;
+  padding-left: 8%;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+#intro {
+  width: 70%;
+  margin: auto;
+  margin-top: 3%;
 }
 
 .display {
@@ -52,7 +76,6 @@ body {
 #main-display {
   width: 50%;
   height: 180px;
-  margin-top: 5%;
 }
 
 #input-time {
@@ -65,28 +88,51 @@ body {
 
 main {
   width: 80%;
-  border: 3px #33D7E8 solid;
+  border: 5px #33D7E8 solid;
   border-radius: 15px;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 3%;
+  box-shadow: inset 0px 0px 2px 1px rgba(0,0,0,0.75);
   .input {
     margin-top: 20px;
     font-family: 'Comfortaa', cursive;
     font-size: 20px;
+    cursor: pointer;
   }
   .label {
     display: block;
     margin-top: 20px;
   }
   #submit-button {
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     font-family: 'Comfortaa', cursive;
     font-size: 20px;
+    border: 2px $blue solid;
+    border-radius: 3px;
+    background-color: white;
+    padding: 5px 25px 5px 25px;
+    box-shadow: 0px 4px 14px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+
+    &:active {
+      box-shadow: none;
+      margin-top: 27px;
+      margin-bottom: 23px;
+    }
   }
   #timezone-input {
     display: block;
     margin: auto;
     margin-top: 20px;
     font-size: 1.3vw;
+  }
+  #url {
+    font-size: 1.3vw;
+    margin-bottom: 35px;
+    background-color: $grey;
+    color: white;
+    border-radius: 5px;
+    display:inline-block;
   }
 }
