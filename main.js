@@ -166,11 +166,11 @@ else {
   document.getElementById('minute-input').innerHTML = minuteInput;
   document.getElementById('timezone-input').innerHTML = timezoneInput;
 
-  let url = "jakec.co.uk?time=";
+  let url = "http://jakec.co.uk?time=";
 
   $('#input-form').submit(function(event){
     event.preventDefault();
-    url = "jakec.co.uk?time=";
+    url = "http://jakec.co.uk?time=";
     url += $('#hour-input').val();
     url += ':';
     url += $('#minute-input').val();
