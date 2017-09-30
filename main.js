@@ -21,11 +21,10 @@ for (var i = 0; i < vars.length; i++) {
 // console.log('Query variable %s not found', variable);
 }
 
-let displayTime = `<div id="mini-display" class="display">
-  <p id="input-time" class="display-time">
-
+let displayTime = `
+  <p id="input-time" class="display">
+    <span style="font-size: 1vw; display: inline-block; margin: -10%;">24hr</span>
   </p>
-</div>
 <div class="text-wrapper">
   <p id="source-timezone">
 
@@ -36,11 +35,9 @@ let displayTime = `<div id="mini-display" class="display">
     is
   </p>
 </div>
-<div id="main-display" class="display">
-  <p id="final-time" class="display-time">
-
+  <p id="final-time" class="display">
+    <span style="font-size: 2vw; display: inline-block; margin: -10%;">24hr</span>
   </p>
-</div>
 <div id="text-wrapper">
   <p id="local-timezone">
 
@@ -121,14 +118,16 @@ if (getQueryVariable("time")){
   else if(finalTime.length === 3){
     finalTime = "0" + finalTime + "0";
   }
-  document.getElementById("input-time").innerHTML = inputTime;
+  // document.getElementById("input-time").innerHTML = inputTime;
+  $('#input-time').prepend(inputTime);
   document.getElementById("source-timezone").innerHTML = "in timezone: \"" + sourceShort + "\"";
   // document.getElementById("time").innerHTML = "Input time in minutes " + inputTimeMinutes;
   // document.getElementById("source-offset").innerHTML = "Source UTC offset in minutes " + sourceOffset;
   document.getElementById("local-timezone").innerHTML = "in your timezone: \"" + localTimezone + "\"";
   // document.getElementById("local-offset").innerHTML = "Local UTC offset in minutes " + localOffset;
   // document.getElementById("total-offset").innerHTML = "Total offset " + totalOffset;
-  document.getElementById("final-time").innerHTML = finalTime;
+  // document.getElementById("final-time").innerHTML = finalTime;
+  $('#final-time').prepend(finalTime);
 }
 else {
   // document.getElementsByTagName('body')[0].innerHTML = displayForm;

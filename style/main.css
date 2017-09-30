@@ -29,42 +29,26 @@ header {
   margin-top: 3%; }
 
 .display {
-  background: linear-gradient(135deg, #4a4a4a 59%, #4a4a4a 66%, #757575 88%, #8c8c8c 100%);
+  background: linear-gradient(135deg, #070707 16%, #0c0c0c 36%, #6b6b6b 94%, #b4b4b4 100%);
   margin: auto;
   text-align: center;
-  position: relative;
   border: black 4px solid;
   border-radius: 3px;
-  box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.75); }
-
-.display-time {
+  box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.75);
   font-family: Digital, sans-serif;
   color: #33D7E8;
   opacity: 0.8;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  line-height: 130%;
-  margin: auto; }
+  display: inline-block;
+  padding: 1% 5% 1% 5%; }
 
 .text-wrapper {
   margin: auto;
   text-align: center;
   margin-top: 25px; }
 
-#mini-display {
-  width: 25%;
-  height: 90px;
-  margin-top: 5%; }
-
-#main-display {
-  width: 50%;
-  height: 180px; }
-
 #input-time {
-  font-size: 5vw; }
+  font-size: 5vw;
+  margin-top: 5%; }
 
 #final-time {
   font-size: 10vw; }
