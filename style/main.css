@@ -111,5 +111,10 @@ main {
     color: white;
     border-radius: 5px;
     display: inline-block; }
+    main #url a {
+      color: white;
+      text-decoration: none; }
+      main #url a:active {
+        color: #33D7E8; }
 
 /*# sourceMappingURL=main.css.map */

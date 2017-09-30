@@ -177,7 +177,12 @@ else {
     url += '&timezone=';
     url += $('#timezone-input').val();
     url = encodeURI(url);
-    document.getElementById('url').innerHTML = url;
+    let anchor = '<a target="_blank" href="';
+    anchor += url;
+    anchor += '">';
+    anchor += url;
+    anchor += '</a>';
+    document.getElementById('url').innerHTML = anchor;
     $('#url').css({"padding":"5px 25px 5px 25px"});
   });
 }

@@ -134,5 +134,12 @@ main {
     color: white;
     border-radius: 5px;
     display:inline-block;
+    a {
+      color: white;
+      text-decoration: none;
+      &:active {
+        color: $blue;
+      }
+    }
   }
 }
