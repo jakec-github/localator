@@ -47,9 +47,9 @@ var displayTime = ' \
 
 var displayForm = ' \
 <p id="intro"> \
-  This tool helps netizens coordinate across time zones. Enter a time and \
-  timezone. The site will generate a link translating the given time to the \
-  local time of anyone clicking on the link. Give it a try! \
+  This localator helps groups coordinate across time zones. Enter a time and \
+  timezone. The site will generate a link for you to share. When anyone visits the link, the entered time is converted to their local time. \
+  Give it a try! \
 </p> \
 <main> \
   <form id="input-form"> \
